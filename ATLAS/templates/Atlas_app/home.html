@@ -1,0 +1,399 @@
+{% extends "base/base.html" %}
+{% block maincontent %}
+<!-- main content -->
+
+
+<div class="container pt-4 pb-4 p-0 fw-bold ">
+  <b class="logo">| </b>UPDATE PSP BANK
+</div>
+<!-- PSP details form section one -->
+<div class="container bg-light border p-5 bg-white">
+  <form action="">
+    <div class="row g-3 pb-5">
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="inputPSP" class="form-label text-muted">PSP Name:<span class="star">*</span></label>
+        <input type="text" class="form-control rounded-0" placeholder="Emerchant GBP test"
+          aria-label="Emerchant GBP test">
+      </div>
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="Account" class="form-label text-muted">Account:<span class="star">*</span></label>
+        <input type="text" class="form-control rounded-0" placeholder=" 1-15567-Emerchant" aria-label="">
+      </div>
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="inputEmail" class="form-label text-muted">Email</label>
+        <input type="text" class="form-control rounded-0" placeholder="" aria-label="Email">
+      </div>
+    </div>
+    <div class="row g-3 pb-5">
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="inputDescription" class="form-label text-muted">Description</label>
+        <input type="text" class="form-control rounded-0" placeholder="" aria-label="">
+      </div>
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="inputAddress" class="form-label text-muted">Address:</label>
+        <input type="text" class="form-control rounded-0" placeholder="" aria-label="">
+      </div>
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="inputPhone" class="form-label text-muted">Phone:</label>
+        <input type="text" class="form-control rounded-0" placeholder="" aria-label="">
+      </div>
+    </div>
+    <div class="row g-3 pb-5">
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="inputCOF" class="form-label text-muted">Cut off Time:<span class="star">*</span></label>
+        <input type="text" class="form-control rounded-0" placeholder="00:00:00" aria-label="">
+      </div>
+      <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+        <label for="inputStatus" class="form-label text-muted">Status:</label>
+        <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+          <option selected>Activ</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+    <!-- PSP details  form section one end -->
+
+    <!-- Transaction data Filters form section two -->
+
+    <div class="container pt-2 pb-4 p-0 fw-bold ">
+      Transaction Data Filters
+    </div>
+
+    <div class="row gx-3 gy-2 align-items-center">
+      <div class="col-sm-2">
+        <label for="inputStatus" class="form-label text-muted">Filter 1:</label>
+        <input type="text" class="form-control rounded-0 " id="specificSizeInputName" placeholder="Column Name">
+      </div>
+      <div class="col-sm-2">
+        <label for="inputStatus" class="form-label text-muted"></label>
+        <input type="text" class="form-control mt-2 rounded-0 " id="specificSizeInputName" placeholder="Column Value">
+      </div>
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-2">
+        <label for="inputStatus" class="form-label text-muted">Filter 2:</label>
+        <input type="text" class="form-control rounded-0" id="specificSizeInputName" placeholder="Terminal">
+      </div>
+      <div class="col-sm-2">
+        <label for="inputStatus" class="form-label text-muted"></label>
+        <input type="text" class="form-control mt-2 rounded-0 " id="specificSizeInputName" placeholder="FPMarketsINT">
+      </div>
+    </div>
+    <!-- Transaction data Filters form section two end -->
+
+    <!--Data schema Mapping form section three-->
+
+    <div class="container pt-4 pb-4 p-0 fw-bold ">
+      Data Sechema Mapping
+    </div>
+    <div class="container p-0">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+              <label for="inputStatus" class="form-label text-muted fw-bold">ATLAS Data Models</label>
+              <select class="form-select rounded-0 mb-3" aria-label="Default select example">
+                <option>debit_amount</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>credit_amount</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>customer_name</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>customer_email</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3" aria-label="Default select example">
+                <option selected>transaction_number</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3" aria-label="Default select example">
+                <option selected>transaction_time</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>select...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3" aria-label="Default select example">
+                <option selected>select...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+              <label for="inputStatus" class="form-label text-muted fw-bold">PSP Data Models</label>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>Amount(with decimal)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>Amount(with decimal)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>Card Holder</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>Customer email</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>Merchant Transaction id</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>Date Time (UTC)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>select...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                <option selected>select...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+          <div class="col">
+            <label for="inputStatus" class="form-label text-muted fw-bold">Credit Amount Filters</label>
+            <div class="row">
+              <div class="col mb-2"><label for="inputAddress" class="form-label text-muted">Filter 1:</label>
+                <input type="text" class="form-control rounded-0" placeholder="Type" aria-label="">
+              </div>
+              <div class="col mb-2"><label for="inputAddress" class="form-label text-muted">Filter 2:</label>
+                <input type="text" class="form-control rounded-0" placeholder="Status" aria-label="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"><textarea class="form-control rounded-0" placeholder="refund credit"
+                  id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+              <div class="col"><textarea class="form-control rounded-0" placeholder="approved" id="floatingTextarea2"
+                  style="height: 100px"></textarea></div>
+            </div>
+            <label for="inputStatus" class="form-label text-muted fw-bold pt-4">Debit Amount Filters</label>
+            <div class="row">
+              <div class="col mb-2"><label for="inputAddress" class="form-label text-muted">Filter 1:</label>
+                <input type="text" class="form-control rounded-0" placeholder="Type" aria-label="">
+              </div>
+              <div class="col mb-2"><label for="inputAddress" class="form-label text-muted">Filter 2:</label>
+                <input type="text" class="form-control rounded-0" placeholder="Status" aria-label="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"><textarea class="form-control rounded-0" placeholder="sale3d" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+              </div>
+              <div class="col"><textarea class="form-control rounded-0" placeholder="approved refunde"
+                  id="floatingTextarea2" style="height: 100px"></textarea></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Data schema Mapping form section three end -->
+
+
+      <!--Data matching sequence form section 4-->
+
+      <div class="container pt-4 pb-4 p-0 fw-bold ">
+        Data Matching Sequence
+      </div>
+      <div class="container p-0">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row">
+              <div class="col">
+                <label for="inputStatus" class="form-label text-muted fw-bold">ATLAS Data Models</label>
+                <select class="form-select rounded-0 mb-3" aria-label="Default select example">
+                  <option>transaction_number</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                  <option selected>debit_amount</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                  <option selected>credit_amount</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select rounded-0 mb-3 " aria-label="Default select example">
+                  <option selected>customer_name</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select rounded-0 mb-3" aria-label="Default select example">
+                  <option selected>transaction_email</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row">
+              <div class="col">
+                <label for="inputStatus" class="form-label text-muted fw-bold">PSP Data Models.</label>
+                <div class="card overflow-auto h-75  text-muted ps-2 rounded-0">
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Terminal
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        satatus
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        type
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Merchant
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        currency
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        card holder
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        card Brand
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row w-100">
+                    <div class="col">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Data matching sequence form section 4 end -->
+    <div>
+
+      <button type="button" class="btn btn-primary rounded-0 me-4">Summit</button>
+      <button type="button" class="btn btn-secondary rounded-0">Cancel</button>
+    </div>
+  </form>
+  
+</div>
+
+
+<!-- main content end-->
+{% endblock %}
