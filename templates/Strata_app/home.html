@@ -1,0 +1,258 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block maincontent %}
+<!-- main content -->
+
+<!-- scroll-up btn -->
+<button class="rounded-circle border border-1" onclick="topFunction()" id="myBtn" title="Go to top"><iclass="bi bi-chevron-up"></iclass=></button>
+
+<div class="col-12">
+    <!-- This section for text in upto image in home page  -->
+    <div class=" text-center pb-5" id="main-section">
+        <p class="main-text text-light fw-bold fs-1 mb-0">A <span class="mycolor">community</span> approach</p>
+        <p class="main-text text-light fw-bold fs-1">to an age old problem</p>
+        <p class="main-text text-light fw-bold fs-1 pt-3">Share & Smile</p>
+    </div>
+    <!-- why section -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 mycolor my-4 col-lg-6  col-xl-6 col-xxl-6">
+                <p class="why" id="why">why</p>
+            </div>
+            <div class="col-12 py-4 col-lg-6  col-xl-6 col-xxl-6">
+                <div class="container overflow-hidden">
+                    <div class="row gy-4">
+                        <div class="col-12  col-lg-6  col-xl-6 col-xxl-6">
+                            <div class="mybgcolor border">
+                                <div class="p-3 text-light">
+                                    <p class="text-center">
+                                        <img class="w-25 mx-auto"
+                                            src="{% static 'media/images/pngtree-vector-watch.png' %}" alt="time">
+                                    <p class="text-center fs-5 fw-bold">
+                                        SAVE TIME:
+                                    </p>
+                                    <p>
+                                        Review the bylaws before a showing to confirm if save time dogs are permitted or
+                                        if
+                                        rentals are allowed.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6  col-xl-6 col-xxl-6">
+                            <div class="shadowBox border">
+                                <div class="p-3">
+                                    <p class="text-center mb-0">
+                                        <img class="w-25 mx-auto"
+                                            src="{% static 'media/images/Business_Finance_Money_1.png' %}"
+                                            alt="Business">
+                                    <p class="text-center fs-5 fw-bold pt-2">
+                                        SAVE MONEY:
+                                    </p>
+                                    <p>
+                                        No longer pay rush its fees for a strata plan or bylaws. Docs available at a
+                                        glance for immediate review.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6  col-xl-6 col-xxl-6">
+                            <div class="shadowBox border">
+                                <div class="p-3 ">
+                                    <p class="text-center">
+                                        <img class="w-25 mx-auto" src="{% static 'media/images/sale.png' %}" alt="time">
+                                    <p class="text-center fs-5 fw-bold">
+                                        WIN MORE LISTINGS:
+                                    </p>
+                                    <p>
+                                        Imagine going into a listing appointment knowing the results of the latest AGM
+                                        or upcoming maintenance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6  col-xl-6 col-xxl-6">
+                            <div class="mybgcolor border">
+                                <div class="p-3 text-light">
+                                    <p class="text-center">
+                                        <img class="w-25 mx-auto" src="{% static 'media/images/d222.png' %}" alt="d222">
+                                    <p class="text-center fs-5 fw-bold">
+                                        INSTANT CREDIBILITY:
+                                    </p>
+                                    <p>
+                                        Imagine shopping for a buyer and already know that 123 Smith St has EV parking
+                                        or that 456 Smith St has an updated depreciation report.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- How section -->
+
+<div class="mybgcolor">
+    <div class="container py-5">
+
+        <div class="row">
+            <div class="col-12 col-lg-6  col-xl-6 col-xxl-6">
+                <div class="container">
+                    <div class="text-light text-center">
+                        <p class="fw-bold fs-1 mb-0">HOW IT WORKS</p>
+                        <p><i class="fs-1 bi bi-dash-lg"> <i class="bi bi-dash-lg"></i></i></p>
+                        <p>Think of us like a community library book stand (leave a book, take a book) - just online
+                            and servicing a larger community. So, along with having access to your own strata
+                            document packages, you'll now have access to 1000's more. Awesome right?! The process is
+                            super simple.</p>
+                    </div>
+                    <div class="row row-col-2">
+                        <div class="col-12  col-lg-6  col-xl-6 col-xxl-6 ">
+                            <div class="row text-light">
+                                <div class="col-3">
+                                    <span class=" fw-bolder numbers">1</span>
+                                </div>
+                                <div class="col-9">
+                                    <p class="fs-2 fw-bold">
+                                        SIGN UP
+                                    </p>
+                                    <p class="p-2">
+                                        Register. Note that this service is exclusive to active REALTORS only.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12  col-lg-6  col-xl-6 col-xxl-6">
+                            <div class="row text-light">
+                                <div class="col-3">
+                                    <span class=" fw-bold numbers">2</span>
+                                </div>
+                                <div class="col-9">
+                                    <p class="fs-2 fw-bold">
+                                        UPLOAD
+                                    </p>
+                                    <p class="p-2">
+                                        Once signed in, upload your strata documents. Our system will categorize and
+                                        sort them.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-col-2 ">
+                        <div class="col-12  col-lg-6  col-xl-6 col-xxl-6">
+                            <div class="row text-light">
+                                <div class="col-3">
+                                    <span class=" fw-bold numbers">3</span>
+                                </div>
+                                <div class="col-9">
+                                    <p class="fs-2 fw-bold">
+                                        DOWNLOAD
+                                    </p>
+                                    <p class="p-2">
+                                        Need to know pet restrictions for LMS 124? No problem.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12  col-lg-6  col-xl-6 col-xxl-6">
+                            <div class="row text-light">
+                                <div class="col-3 ">
+                                    <span class=" fw-bold numbers">4</span>
+                                </div>
+                                <div class="col-9">
+                                    <p class="fs-2 fw-bold">
+                                        SMILE
+
+                                    </p>
+                                    <p class="p-2">
+                                        The more we share the more informed we are as a community.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-light  col-lg-6  col-xl-6 col-xxl-6">
+                <p class="why">how</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- video section -->
+<div class="container text-center py-5">
+    <video class="video w-50" controls="">
+        <source src="/static/media/images/STRATADOCS.mp4" type="video/mp4">
+    </video>
+</div>
+<!-- video section end-->
+
+<!-- CONTACT US section  -->
+<div class="container-fluid p-0 " id="form-section">
+    <div class="inputform w-100 h-100 " id="contact">
+        <div class="container pt-5">
+            <div class="text-light text-center">
+                <p class="fw-bold fs-1 mb-0">CONTACT US</p>
+                <p class="mb-0"><i class="fs-1 bi bi-dash-lg"> <i class="bi bi-dash-lg"></i></i></p>
+                <p class="pb-5 mb-0">Let us know what you think. Your comments and feedback are super appreciated.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6  col-xl-6 col-xxl-6 mx-auto">
+                    <form id="">
+                        <div class="mb-3 ">
+                            <input type="Name" class="form-control" id="exampleInputname" aria-describedby="namelHelp"
+                                placeholder=" Name*" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="Email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                                placeholder="Email*" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="Phone" class="form-control" id="exampleInputPhone"
+                                aria-describedby="phonelHelp" placeholder="Phone*" required>
+                        </div>
+                        <div class="mb-3 ">
+                            <textarea class="form-control Feedback" id="exampleFormControlTextarea1"
+                                placeholder="Feedback*" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="btn mybgcolor text-light float-end fw-bold rounded-pill w-25">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CONTACT US section end -->
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<!-- main content end-->
+{% endblock %}
+<!-- <img src="{% static 'media/images/sliderimage.jpeg' %}" class="img-fluid" alt="..."> -->

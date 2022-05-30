@@ -1,0 +1,103 @@
+/* for text color */
+.mycolor {
+  color: #1B84E7 !important;
+}
+
+body{
+  background-color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+
+}
+/* for background color */
+.mybgcolor{
+  background-color:#1B84E7 !important ;
+}
+/* for home page top image  */
+#main-section{
+  background-image: url('../media/images/sliderimage.jpeg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* for home page top image text  */
+.main-text{
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/* for why section */
+.why{
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 18rem;
+  margin:0 auto;
+}
+
+/* font-size for how section number (1234)  */
+.numbers{
+  font-size: 8em;
+
+}
+/* for home page form section image  */ 
+#form-section{
+  background-image: url('../media/images/4-1.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+}
+/* for form section image background */
+.inputform{
+  background-color: rgb(0 0 0 / 78%) !important;
+  opacity: 0.9;
+}
+
+/* text area  in form section*/
+#exampleFormControlTextarea1{
+  height: 18rem !important;
+}
+
+/* for shadow in box in why section */
+.shadowBox{
+  /* background: #ffffff none repeat scroll 0 0; */
+  -webkit-box-shadow: 0 0 10px #cccccc;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .why{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 10rem;
+    margin-left: 20px;
+    line-height: 100%;
+}
+}
+@media only screen and (max-width: 200px) {
+  .why{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 5rem;
+    margin-left: 20px;
+    line-height: 100%;
+}
+}
+
+/* for 0scroll-up btn in home page */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 3; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #1B84E7; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
