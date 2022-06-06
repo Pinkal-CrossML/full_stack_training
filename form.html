@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./site.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="./site.js"></script> -->
+    <title>Index</title>
+</head>
+
+<body>
+
+    <div class="container pt-4 pb-4 p-0 fw-bold ">
+        <b class="logo">| </b> GENERAL JOURNAL
+        <div class="container float-end col-2">
+            <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                <option selected value="0">USD</option>
+                <option selected value="0">USD2</option>
+                <option selected value="0">USD3</option>
+                <option selected value="0">USD4</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container bg-light border p-5 bg-white">
+
+        <div class="text-end py-2">
+            <a href="./table.html"><button type="button" class="btn btn-secondary">Table</button></a>
+        </div>
+        <form action="">
+            <div class="row align-items-center mb-0 mb-md-4 mb-lg-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <label class="form-text mb-2">Template Name</label>
+                    <input type="text" id="inputtemplate" class="form-control rounded-0" value="567587987"
+                        aria-describedby="templatedHelpInline">
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"></div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-text mb-2">Currency</label>
+                            <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                                <option selected value="0">USD</option>
+                                <option selected value="0">USD2</option>
+                                <option selected value="0">USD3</option>
+                                <option selected value="0">USD4</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-text mb-2">AUD Conversion</label>
+                            <input type="email" id="inputPassword6" class="form-control rounded-0" value="1.35890000"
+                                aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 pb-5">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="inputdate" class="form-label text-muted">Transaction Date <span
+                            class="text-danger">*</span></label>
+                    <input type="date" class="form-control rounded-0" placeholder="" aria-label="">
+
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="inputnumber" class="form-label text-muted">Reference Number:<span
+                            class="text-danger">*</span></label>
+                    <input type="text" class="form-control rounded-0" placeholder="" aria-label="">
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="tranumber" class="form-label text-muted">Transaction number:</label>
+                    <input type="text" class="form-control rounded-0" placeholder="" aria-label="">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table id="mytable" class="table table-bordered ">
+                    <thead class="table-secondary">
+                        <th>ACCOUNT</th>
+                        <th>DEBIT</th>
+                        <th>CREDIT</th>
+                        <th>QUANTITY</th>
+                        <th>DESCRIPTION</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+                                    <select class="form-select rounded-0 mb-2 text-muted" id="add-row"
+                                        aria-label="Default select example" onchange="my()">
+                                        <option selected value="Select Type..." disabled>Select Type..</option>
+                                        <option value="1-11200-Payroll Cheque Account(AUD)">1-11200-Payroll Cheque Account(AUD)</option>
+                                        <option value="1-11400-Petty Cash(AUD)">1-11400-Petty Cash(AUD)</option>
+                                        <option value="1-1130-Cash Drawer(AUD)">1-1130-Cash Drawer(AUD)</option>
+                                        <option value="1-1150-Clearing A/c(AUD)">1-1150-Clearing A/c(AUD)</option>
+                                        <option value="1-11800-Undeposited Funds(AUD)">1-11800-Undeposited Funds(AUD)</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row py-3">
+                <div class="col-3"><textarea class="form-control rounded-0" placeholder="General comment..."
+                        id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col">
+                    <div class="container ">
+                        <div class="row row-cols-2 float-end">
+                            <div class="col">TOTAL DEBIT:</div>
+                            <div class="col">360.00 USD</div>
+                            <div class="col">TOTAL CREDIT:</div>
+                            <div class="col">260.00 USD</div>
+                            <div class="col">OUT OF BALANCE</div>
+                            <div class="col">-100.00 USD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <button type="button" class="btn btn-primary rounded-0 m-3 ms-0" onclick="my()">Submit</button>
+                <button type="button" class="btn btn-secondary rounded-0 m-3">Cancel</button>
+                <button type="button" class="btn btn-secondary rounded-0 m-3">Save Template</button>
+            </div>
+        </form>
+
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="script/site.js"></script>
+</body>
+
+</html>
