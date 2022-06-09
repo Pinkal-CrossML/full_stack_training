@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -132,11 +133,17 @@
           <div class="form-box h-100">
             <div class="p-5">
               <form>
-                <div class="mb-3">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="mb-3 input-group">
+                  <span class="input-group-text bg-white border-end-0" for="exampleInputloction"><i
+                      class="bi bi-geo-alt-fill"></i></span>
+                  <input type="text" class="form-control border-start-0" id="exampleInputloction"
+                    placeholder="Choose your location">
                 </div>
-                <div class="mb-3">
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="mb-3 input-group">
+                  <span class="input-group-text bg-white border-end-0" for="exampleInputfood"><i
+                      class="bi bi-earbuds"></i></i></span>
+                  <input type="text" class="form-control border-start-0" id="exampleInputfood"
+                    placeholder="Choose restaurant">
                 </div>
                 <button type="button" class="btn go-to btn-lg text-light " disabled>Find Food</button>
               </form>
@@ -153,17 +160,176 @@
     </div>
     <div class="pt-4">
       <div class="container">
-        <div class="row row-cols-6">
-          <div class="col text-center mx-auto">Near By</div>
-          <div class="col text-center mx-auto">Desserts & Bakes</div>
-          <div class="col text-center mx-auto">Cafes & More</div>
-          <div class="col text-center mx-auto">Upcoming Events</div>
-          <div class="col text-center mx-auto">Newly Opened</div>
-          <div class="col text-center mx-auto">Drinks & Nightkise</div>
+        <div class="row ">
+          <div class="col text-center mx-auto mb-4 text-muted">
+            <div><i class="bi bi-geo-alt-fill"></i></div> Near By
+          </div>
+          <div class="col text-center mx-auto mb-4 text-muted">
+            <div><i class="bi bi-basket2"></i></div> Desserts & Bakes
+          </div>
+          <div class="col text-center mx-auto mb-4 text-muted">
+            <div><i class="bi bi-cup-fill"></i></div> Cafes & More
+          </div>
+          <div class="col text-center mx-auto mb-4 text-muted">
+            <div><i class="bi bi-calendar4-week"></i></div> Upcoming Events
+          </div>
+          <div class="col text-center mx-auto mb-4 text-muted">
+            <div><i class="bi bi-door-open"></i></div> Newly Opened
+          </div>
+          <div class="col text-center mx-auto mb-4 text-muted">
+            <div><i class="bi bi-cup-straw"></i></div> Drinks & Nightkise
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="container pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="row">
+            <div class="col-2">
+              <img src="/images/img_1.svg" class="img-thumbnail w-75" alt="...">
+            </div>
+            <div class="col">
+              <div class="">
+                <h4>Choose Your Area Restaurant</h4>
+                <p>Donec et tellus sed lorem condimentum maximus. Sed tempor, leo tempus condimentum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="row">
+            <div class="col-2">
+              <img src="/images/img_2.svg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col">
+              <div class="">
+                <h4>Choose Food</h4>
+                <p>Donec et tellus sed lorem condimentum maximus. Sed tempor, leo tempus condimentum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="row">
+            <div class="col-2">
+              <img src="/images/img_3.svg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col">
+              <div class="">
+                <h4>Delivery</h4>
+                <p>Donec et tellus sed lorem condimentum maximus. Sed tempor, leo tempus condimentum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center pt-5">
+    <h2> Discover New Restaurants & Book Now </h2>
+    <!-- panding  -->
+  </div>
+
+  <div class="text-center pt-5">
+    <h2> Order Food Online In Your Area </h2>
+    <h6 class="pt-3"><i class="bi bi-geo-alt-fill main-color"></i> <span class="main-color">New York</span> <span
+        class="text-muted">Change Location</span></h6>
+  </div>
+  <div class="container pt-3">
+    <div class="input-group mb-3 w-25 mx-auto">
+      <input type="text" class="form-control" placeholder="Enter Your Location" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <button class="btn main-color-bg text-light" type="button" id="button-addon2">Search</button>
+    </div>
+  </div>
+
+  <!-- card section -->
+
+  <div class="container pt-4">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div><img src="images/img-1.jpg" class="card-img-top" alt="..."></div>
+          <div class="position-absolute w-100 card-logo"> 
+            <img class=" " src="images/logo-1.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/img-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/img-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/img-4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/img-5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/img-6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/img-7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/img-8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 
 
   <!-- Option 1: Bootstrap Bundle with Popper -->

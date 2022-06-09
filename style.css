@@ -1,7 +1,20 @@
 .main-color{
     color: #FDA602
 }
+.card-logo{
+    margin-top: 50%;
+}
 
+@media screen and (max-width: 760px) {
+    .card-logo{
+        margin-top: 58%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card-logo{
+        margin-top: 55%;
+    }
+}
 .main-color-bg{
     background-color: #FFA804;
 }
