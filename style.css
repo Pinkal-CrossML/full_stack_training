@@ -35,6 +35,11 @@
     background-size: cover;
     background-position: center;
   }
+#main-baner{
+    background-image: url('images/banner-1.jpg');
+    /* background-size: cover; */
+    /* background-position: center; */
+  }
 
 .main-text{
     position: relative;
@@ -42,6 +47,11 @@
     left:50%;
     transform: translate(-50%,-50%);
   }
+
+.border-color{
+    border-color: white;
+    border-style: solid;
+}
 
 .form-box{
     background-color: rgb(255,255,255,.102);
