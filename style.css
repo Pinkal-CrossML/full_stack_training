@@ -35,10 +35,25 @@
     background-size: cover;
     background-position: center;
   }
-#main-baner{
-    background-image: url('images/banner-1.jpg');
+
+#foot-section{
+    background-image: url('images/bottom-banner.jpg');
     /* background-size: cover; */
     /* background-position: center; */
+}
+#main-baner{
+    background-image: url('images/banner-1.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+ 
+  }
+#main-baner-two{
+    background-image: url('images/banner-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
 
 .main-text{
