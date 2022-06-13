@@ -1,81 +1,84 @@
-.main-color{
+.main-color {
     color: #FDA602
 }
-.card-logo{
+
+.card-logo {
     margin-top: 50%;
 }
 
 @media screen and (max-width: 760px) {
-    .card-logo{
+    .card-logo {
         margin-top: 58%;
     }
 }
+
 @media screen and (max-width: 500px) {
-    .card-logo{
+    .card-logo {
         margin-top: 55%;
     }
 }
-.main-color-bg{
+
+.main-color-bg {
     background-color: #FFA804;
 }
 
-.go-to{
+.go-to {
     background-color: #dc8f00 !important;
-    opacity: inherit!important;
-    
+    opacity: inherit !important;
+
 }
 
-
-.first-nav{
+.first-nav {
     background-color: #F3F3F3;
-  }
+}
 
-#main-section{
+#main-section {
     background-image: url('images/banner.jpg');
     background-size: cover;
     background-position: center;
-  }
-
-#foot-section{
-    background-image: url('images/bottom-banner.jpg');
-    /* background-size: cover; */
-    /* background-position: center; */
 }
-#main-baner{
+
+#foot-section {
+    background-image: url('images/bottom-banner.jpg');
+
+}
+
+#main-baner {
     background-image: url('images/banner-1.jpg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
 
- 
-  }
-#main-baner-two{
+
+}
+
+#main-baner-two {
     background-image: url('images/banner-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
-  }
+}
 
-.main-text{
+.main-text {
     position: relative;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-  }
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-.border-color{
+.border-color {
     border-color: white;
     border-style: solid;
 }
 
-.form-box{
-    background-color: rgb(255,255,255,.102);
+.form-box {
+    background-color: rgb(255, 255, 255, .102);
 }
 
-.first-text{
+.first-text {
     font-size: 2vw !important;
 }
 
-.sct-two{
+.sct-two {
     background-color: #F3F3F3;
 }
