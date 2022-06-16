@@ -1,0 +1,277 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block maincontent %}
+<!-- main content -->
+
+<div class="container py-3">
+  <div class="navbar navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><u>CNN </u></a>
+    </div>
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+          </div>
+          <div class="col">
+            <div class="row text-end">
+              <div class="col">
+                <button class="btn text-light rounded-0 bg-nav " type="button">Create & continune Next </button>
+              </div>
+              <div class="col">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination ">
+                      <li class="page-item  "><a class="page-link rounded-0  border-secondary text-dark" href="#">Previous</a></li>
+                      <li class="page-item "><a class="page-link rounded-0  border-secondary text-dark" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- form section one -->
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col">
+            <div class="container">
+              <div class="row g-2">
+                <div class="">
+                  <div class="p-3 border ">PROCESS DETAILS</div>
+                </div>
+                <div class="">
+                  <div class="p-3 border bg-nav ">CNN MODEL</div>
+                </div>
+                <div class="">
+                    <div class="p-3 border ">MANAGE ATTRIBUTE</div>
+                  </div>
+                <div class="">
+                  <div class="p-3 border ">IMPORT SCHEDULER</div>
+                </div>
+                <div class="">
+                  <div class="p-3 border ">EXPORT SCHEDULR</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row g-5  align-items-center pt-2">
+              <div class="col-4">
+                <label for="inputPassword6" class="col-form-label">Process Name<span class="star">*</span></label>
+              </div>
+              <div class="col">
+                <input type="password" id="inputPassword6" class="form-control rounded-0"
+                  aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+            <div class="row g-5 align-items-center pt-2">
+              <div class="col-4">
+                <label for="inputPassword6" class="col-form-label">Pipeline<span class="star">*</span></label>
+              </div>
+              <div class="col">
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                  <option selected>Activ</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="row g-5 align-items-center pt-2">
+              <div class="col-4">
+                <label for="inputPassword6" class="col-form-label">Classification Model<span
+                    class="star">*</span></label>
+              </div>
+              <div class="col">
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                  <option selected="">Activ</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="row g-5 align-items-center pt-2">
+              <div class="col-4">
+                <label for="inputPassword6" class="col-form-label">Input Documents<span class="star">*</span></label>
+              </div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">JPG</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">PDF</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">JPEG</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">TIF</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">PNG</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+
+
+            <div class="row g-3 align-items-center pt-2">
+              <div class="col-4">
+                <label for="inputPassword6" class="col-form-label">Time Zone<span class="star">*</span></label>
+              </div>
+              <div class="col">
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                  <option selected>Activ</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="row g-3 align-items-center pt-2">
+              <div class="col-4">
+                <label for="inputPassword6" class="col-form-label">Process SLA<span class="star">*</span></label>
+              </div>
+              <div class="col">
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                  <option selected="">Activ</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="row g-3 align-items-center pt-2">
+              <div class="col-4">
+                <label for="inputPassword6" class="col-form-label">Pre Processing<span class="star">*</span></label>
+              </div>
+              <div class="col">
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                  <option selected="">Activ</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end form section one -->
+        <div class="container pt-4">
+          <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+              <div class="row g-5 align-items-center pt-2">
+                <div class="col-4">
+                  <label for="inputPassword6" class="col-form-label">Pipelinvce<span class="star">*</span></label>
+                </div>
+                <div class="col">
+                  <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                    <option selected>Activ</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="row g-5  align-items-center pt-2">
+                <div class="col-4">
+                  <label for="inputPassword6" class="col-form-label">User ID<span class="star">*</span></label>
+                </div>
+                <div class="col">
+                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                    aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row g-5  align-items-center pt-2">
+                <div class="col-4">
+                  <label for="inputPassword6" class="col-form-label">First name<span class="star">*</span></label>
+                </div>
+                <div class="col">
+                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                    aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row g-5  align-items-center pt-2">
+                <div class="col-4">
+                  <label for="inputPassword6" class="col-form-label">Email ID<span class="star">*</span></label>
+                </div>
+                <div class="col">
+                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                    aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+
+            </div>
+            <div class="col">
+              <div class="row g-5  align-items-center pt-2">
+                <div class="col-4">
+                  <label for="inputPassword6" class="col-form-label">Last Name<span class="star">*</span></label>
+                </div>
+                <div class="col">
+                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                    aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              <div class="row g-5 align-items-center pt-2">
+                <div class="col-4">
+                  <label for="inputPassword6" class="col-form-label">User type<span class="star">*</span></label>
+                </div>
+                <div class="col">
+                  <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
+                    <option selected>Activ</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="row g-5  align-items-center pt-2">
+                <div class="col-4">
+                  <label for="inputPassword6" class="col-form-label">Confirm password<span class="star">*</span></label>
+                </div>
+                <div class="col">
+                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                    aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+              
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- main content end-->
+{% endblock %}

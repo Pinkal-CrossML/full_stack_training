@@ -4,7 +4,9 @@ from django.shortcuts import render
 # Create your views here.
 
 #function for render form html page 
-def home(request):
-    return render(request,'process/home.html')
+def process(request):
+    return render(request,'process/process.html')
 
 
+def cnnmodel(request):
+    return render(request,'process/cnnmodel.html')

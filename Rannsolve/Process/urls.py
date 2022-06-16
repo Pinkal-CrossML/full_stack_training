@@ -3,6 +3,7 @@ from django.urls import path , include
 from . import views
 
 urlpatterns = [
-    path('',views.home,name='home'), #url for form page 
+    path('',views.process,name='process'),
+    path('cnnmodel',views.cnnmodel,name='cnnmodel'), #url for form page 
    
 ]

@@ -1,3 +1,10 @@
 body{
     background: #edeff2;
 }
+
+.bg-nav{
+    background: #42778F;
+}
+.star{
+    color: red;
+}
