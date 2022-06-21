@@ -33,6 +33,9 @@
                 <div class="">
                   <div class="p-3 border text-light bg-nav">CONFIGURE PROCESS</div>
                 </div>
+                <div class="" id="hideValuesOnSelect">
+                  <div class="p-3 border ">CNN MODEL</div>
+                </div>
                 <div class="">
                   <div class="p-3 border ">MANAGE ATTRIBUTE</div>
                 </div>
@@ -75,9 +78,10 @@
                     class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">no</option>
-                  <option value="1">yes</option>
+                <select class="form-select rounded-0" aria-label="Default select example"
+                  onchange="displayDivDemo('hideValuesOnSelect', this)">
+                  <option value="0" >No</option>
+                  <option value="1" selected>Yes</option>
                 </select>
               </div>
             </div>
@@ -242,18 +246,18 @@
                     aria-describedby="passwordHelpInline">
                 </div>
               </div>
-              
-              
-                </div>
-              </div>
+
+
             </div>
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
+
+
+</div>
+</div>
 </div>
 </div>
 </div>
