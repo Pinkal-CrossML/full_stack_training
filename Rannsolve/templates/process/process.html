@@ -15,8 +15,10 @@
           </div>
           <div class="col">
             <div class="row text-end">
+              <form action="/add_process" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
               <div class="d-grid gap-2 d-md-block">
-                <button class="btn rounded-0 bg-nav m-2" type="button"><a class="text-light" href="/cnnmodel">Create & continune Next</a></button>
+                <button class="btn rounded-0 bg-nav m-2" type="submit">Create & continune Next</button>
                 <button class="btn text-light rounded-0 bg-nav" type="button">Clear</button>
                 <button class="btn text-light rounded-0 bg-nav" type="button">Cancel</button>
               </div>
@@ -51,20 +53,20 @@
           <div class="col">
             <div class="row g-5  align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Process Name<span class="star">*</span></label>
+                <label for="inputname" class="col-form-label">Process Name<span class="star">*</span></label>
               </div>
               <div class="col">
-                <input type="password" id="inputPassword6" class="form-control rounded-0"
-                  aria-describedby="passwordHelpInline">
+                <input type="text" id="inputname" class="form-control rounded-0"
+                  aria-describedby="passwordHelpInline" name="process_name">
               </div>
             </div>
             <div class="row g-5 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Pipeline<span class="star">*</span></label>
+                <label for="" class="col-form-label">Pipeline<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected>Engine-1</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="pipeline">
+                  <option selected value="0">Engine-1</option >
                   <option value="1">Engine-2</option>
                   <option value="2">Engine-3</option>
                   <option value="3">Engine-4</option>
@@ -74,20 +76,20 @@
             </div>
             <div class="row g-5 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Classification Model<span
+                <label for="" class="col-form-label">Classification Model<span
                     class="star">*</span></label>
               </div>
               <div class="col">
                 <select class="form-select rounded-0" aria-label="Default select example"
-                  onchange="displayDivDemo('hideValuesOnSelect', this)">
-                  <option value="0" >No</option>
-                  <option value="1" selected>Yes</option>
+                  onchange="displayDivDemo('hideValuesOnSelect', this)" name="classification_model">
+                  <option value="0" selected >No</option>
+                  <option value="1">Yes</option>
                 </select>
               </div>
             </div>
             <div class="row g-5 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Input Documents<span class="star">*</span></label>
+                <label for="" class="col-form-label">Input Documents<span class="star">*</span></label>
               </div>
               <div class="col">
                 <div class="form-check form-check-inline">
@@ -119,46 +121,48 @@
 
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Time Zone<span class="star">*</span></label>
+                <label for="" class="col-form-label">Time Zone<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected>Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="time_zone">
+                  <option selected value="0">USA</option>
+                  <option value="1">IN</option>
+                  <option value="2">UK</option>
+                 
                 </select>
               </div>
 
             </div>
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Process SLA<span class="star">*</span></label>
+                <label for="" class="col-form-label">Process SLA<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="process_sla">
+                  <option selected="" value="0">1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                
                 </select>
               </div>
             </div>
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Pre Processing<span class="star">*</span></label>
+                <label for="" class="col-form-label">Pre Processing<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="pre_processing">
+                  <option selected value="0">pre1</option>
+                  <option value="1">pre2</option>
+                  <option value="2">pre3</option>
+              
                 </select>
               </div>
             </div>
+
+            <form>
+
           </div>
-
         </div>
         <!-- end form section one -->
         <div class="container pt-4">
@@ -170,7 +174,7 @@
 
               <div class="row g-5 align-items-center pt-2">
                 <div class="col-4">
-                  <label for="inputPassword6" class="col-form-label">Pipelinvce<span class="star">*</span></label>
+                  <label for="" class="col-form-label">Pipelinvce<span class="star">*</span></label>
                 </div>
                 <div class="col">
                   <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
@@ -185,28 +189,28 @@
 
               <div class="row g-5  align-items-center pt-2">
                 <div class="col-4">
-                  <label for="inputPassword6" class="col-form-label">User ID<span class="star">*</span></label>
+                  <label for="" class="col-form-label">User ID<span class="star">*</span></label>
                 </div>
                 <div class="col">
-                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                  <input type="password" id="" class="form-control rounded-0"
                     aria-describedby="passwordHelpInline">
                 </div>
               </div>
               <div class="row g-5  align-items-center pt-2">
                 <div class="col-4">
-                  <label for="inputPassword6" class="col-form-label">First name<span class="star">*</span></label>
+                  <label for="" class="col-form-label">First name<span class="star">*</span></label>
                 </div>
                 <div class="col">
-                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                  <input type="password" id="" class="form-control rounded-0"
                     aria-describedby="passwordHelpInline">
                 </div>
               </div>
               <div class="row g-5  align-items-center pt-2">
                 <div class="col-4">
-                  <label for="inputPassword6" class="col-form-label">Email ID<span class="star">*</span></label>
+                  <label for="" class="col-form-label">Email ID<span class="star">*</span></label>
                 </div>
                 <div class="col">
-                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                  <input type="password" id="" class="form-control rounded-0"
                     aria-describedby="passwordHelpInline">
                 </div>
               </div>
@@ -215,16 +219,16 @@
             <div class="col">
               <div class="row g-5  align-items-center pt-2">
                 <div class="col-4">
-                  <label for="inputPassword6" class="col-form-label">Last Name<span class="star">*</span></label>
+                  <label for="" class="col-form-label">Last Name<span class="star">*</span></label>
                 </div>
                 <div class="col">
-                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                  <input type="password" id="" class="form-control rounded-0"
                     aria-describedby="passwordHelpInline">
                 </div>
               </div>
               <div class="row g-5 align-items-center pt-2">
                 <div class="col-4">
-                  <label for="inputPassword6" class="col-form-label">User type<span class="star">*</span></label>
+                  <label for="" class="col-form-label">User type<span class="star">*</span></label>
                 </div>
                 <div class="col">
                   <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
@@ -239,14 +243,13 @@
 
               <div class="row g-5  align-items-center pt-2">
                 <div class="col-4">
-                  <label for="inputPassword6" class="col-form-label">Confirm password<span class="star">*</span></label>
+                  <label for="" class="col-form-label">Confirm password<span class="star">*</span></label>
                 </div>
                 <div class="col">
-                  <input type="password" id="inputPassword6" class="form-control rounded-0"
+                  <input type="password" id="" class="form-control rounded-0"
                     aria-describedby="passwordHelpInline">
                 </div>
               </div>
-
 
             </div>
           </div>
