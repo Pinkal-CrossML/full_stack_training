@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Dept
+from .models import Process_data
 # Register your models here.
-admin.site.register(Dept)
+admin.site.register(Process_data)
