@@ -9,3 +9,6 @@ body{
 .star{
     color: red;
 }
+#hideValuesOnSelect {
+    display: none;
+}

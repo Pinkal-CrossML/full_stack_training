@@ -60,9 +60,11 @@
             </div>
           </div>
           <div class="col">
+            <form action="/add_cnn_model" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
             <div class="row g-5  align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label"><span class="star"></span></label>
+                <label for="inputtext1" class="col-form-label"><span class="star"></span></label>
               </div>
               <div class="col">
                 <div class="form-check form-check-inline">
@@ -79,123 +81,125 @@
             </div>
             <div class="row g-5 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Type<span class="star">*</span></label>
+                <label for="inputtexttype" class="col-form-label">Type<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected>Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="type">
+                  <option selected value="Regular_Model">Regular Model</option>
+                  <option value="VCG_Model">VCG Model</option>
                 </select>
               </div>
 
             </div>
             <div class="row g-5  align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Name<span class="star">*</span></label>
+                <label for="inputtextname" class="col-form-label">Name<span class="star">*
+                </span></label>
               </div>
               <div class="col">
-                <input type="password" id="inputPassword6" class="form-control rounded-0"
-                  aria-describedby="passwordHelpInline">
+                <input type="text" id="inputname" class="form-control rounded-0"
+                  aria-describedby="textHelpInline" name='name'>
+                  <div id="name" class="form-text">Enter a valid model name and space are not allowed.</div>
               </div>
+        
             </div>
             <div class="row g-5  align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Cofidence Threshold<span
+                <label for="inputtext4" class="col-form-label">Cofidence Threshold<span
                     class="star">*</span></label>
               </div>
               <div class="col">
-                <input type="password" id="inputPassword6" class="form-control rounded-0"
-                  aria-describedby="passwordHelpInline">
+                <input type="number" id="inputtext5" class="form-control rounded-0"
+                  aria-describedby="textHelpInline" name='cofidence_number'>
+                  <div id="confidence" class="form-text">Enter a number between 0 and 100</div>
               </div>
             </div>
             <div class="row g-5  align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Sample File<span class="star">*</span></label>
+                <label for="inputtext6" class="col-form-label">Sample File<span class="star">*</span></label>
               </div>
               <div class="col">
                 <input class="form-control rounded-0" type="file" id="formFile">
+                <div id="file" class="form-text">only valid zip file and contain 200-500 image files </div>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Epochs<span class="star">*</span></label>
+                <label for="inputtext7" class="col-form-label">Epochs<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected>Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='epochs'>
+                  <option selected value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>
+                  <option value="60">60</option>
+                  <option value="70">70</option>
+                  <option value="80">80</option>
+                  <option value="90">90</option>
+                  <option value="100">100</option>
                 </select>
               </div>
 
             </div>
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Batch Size<span class="star">*</span></label>
+                <label for="inputtext8" class="col-form-label">Batch Size<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='Batch'>
+                  <option selected="" value="16">16</option>
+                  <option value="32">32</option>
+                  <option value="64">64</option>
                 </select>
               </div>
             </div>
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">kernel Initializer<span class="star">*</span></label>
+                <label for="inputtext9" class="col-form-label">kernel Initializer<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="kernel_Initializer">
+                  <option selected="" value="he_noraml">he_noraml</option>
+                  <option value="he_uniform">he_uniform</option>
                 </select>
               </div>
             </div>
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Optimize<span class="star">*</span></label>
+                <label for="inputtext10" class="col-form-label">Optimize<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='optimize'>
+                  <option selected="" value="rmsprop">rmsprop</option>
+                  <option value="xrmprop">xrmprop</option>
                 </select>
               </div>
             </div>
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Test Size<span class="star">*</span></label>
+                <label for="inputtext11" class="col-form-label">Test Size<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='test_size'>
+                  <option selected="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
                 </select>
               </div>
+              
             </div>
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
-                <label for="inputPassword6" class="col-form-label">Activation<span class="star">*</span></label>
+                <label for="inputtext12" class="col-form-label">Activation<span class="star">*</span></label>
               </div>
               <div class="col">
-                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                  <option selected="">Activ</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='activation'>
+                  <option selected="relu">relu</option>
+                  <option value="esl">esl</option>
                 </select>
               </div>
             </div>
@@ -209,7 +213,7 @@
             </div>
             <div class="col">
               <div class="d-grid gap-2 d-md-block">
-                <button class="btn text-light rounded-0 bg-nav" type="button">+Add</button>
+                <button class="btn text-light rounded-0 bg-nav" type="submit"">+Add</button>
                 <button class="btn text-light rounded-0 bg-nav" type="button">Cancel</button>
               </div>
             </div>
@@ -218,6 +222,8 @@
         <div class="container">
           <div class="row">
             <div class="col-4">
+
+              <form>
 
             </div>
             <div class="col">
