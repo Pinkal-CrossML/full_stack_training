@@ -38,7 +38,7 @@
       <!-- form section one -->
       <div class="container pt-5">
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4">
             <div class="container">
               <div class="row g-2">
                 <div class="">
@@ -59,7 +59,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4">
             <form action="/add_cnn_model" method="POST" enctype="multipart/form-data">
               {% csrf_token %}
             <div class="row g-5  align-items-center pt-2">
@@ -122,13 +122,13 @@
                 <label for="inputtext6" class="col-form-label">Sample File<span class="star">*</span></label>
               </div>
               <div class="col-4">
-                {{ form.cv_file }}
-                <input type="file" name="cv_file">
+                {% comment %} {{ form.sample_file }} {% endcomment %}
+                <input type="file" name="sample_file">
                 <div id="file" class="form-text">only valid zip file and contain 200-500 image files </div>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-8 col-lg-4 col-xl-4 col-xxl-4">
             <div class="row g-3 align-items-center pt-2">
               <div class="col-4">
                 <label for="inputtext7" class="col-form-label">Epochs<span class="star">*</span></label>

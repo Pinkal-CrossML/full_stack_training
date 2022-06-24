@@ -11,4 +11,4 @@ class Process_dataForm(forms.ModelForm):
 class Cnn_modelForm(forms.ModelForm):
     class Meta:
         model = Cnn_model
-        exclude = ["cnnclass", "cv_file"]
+        exclude = ["cnnclass", "sample_file"]

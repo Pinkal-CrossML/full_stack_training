@@ -120,7 +120,7 @@ class Cnn_model(models.Model):
     cofidence_number = models.CharField(max_length=50,null=True)
     name = models.CharField(max_length=50,null=True)
     cnnclass = models.CharField(max_length=50,default="Single_Class")
-    cv_file = models.FileField(null=True)
+    sample_file = models.FileField(null=True)
    
     def __str__(self):
         return self.name
