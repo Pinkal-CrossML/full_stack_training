@@ -74,7 +74,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                    value="option2">
+                    value="option2" disabled>
                   <label class="form-check-label" for="inlineRadio2">Multi Class</label>
                 </div>
               </div>
@@ -121,8 +121,9 @@
               <div class="col-4">
                 <label for="inputtext6" class="col-form-label">Sample File<span class="star">*</span></label>
               </div>
-              <div class="col">
-                <input class="form-control rounded-0" type="file" id="formFile">
+              <div class="col-4">
+                {{ form.cv_file }}
+                <input type="file" name="cv_file">
                 <div id="file" class="form-text">only valid zip file and contain 200-500 image files </div>
               </div>
             </div>

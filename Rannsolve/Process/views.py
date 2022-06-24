@@ -35,10 +35,18 @@ def add_process(request):
 
 def add_cnn_model(request):
     form=Cnn_modelForm()
-    if request.method == "POST":
+    print(request.FILES['cv_file'])
+    if request.method == "POST" and request.FILES['cv_file']:
         form = Cnn_modelForm(request.POST)
+        # breakpoint()
         if form.is_valid():
-            form.save()
+            
+            my_model = form.save(commit=False)
+            my_model.cv_file = request.FILES['cv_file']
+            my_model.cnnclass = "Single_Class value"
+            my_model.save()
+            # breakpoint()
+            # form.save()
 
         # data = Cnn_model()
         # data.type = request.POST.get('type')
