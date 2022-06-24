@@ -1,5 +1,7 @@
 from unicodedata import name
 from django.db import models
+from multiselectfield import MultiSelectField
+
 
 # Create your models here.
 
@@ -39,6 +41,16 @@ class Process_data(models.Model):
         ('no','no'),
        
     )
+    Input_documents_choices = (
+        ('JPG','JPG'),
+        ('PDF','PDF'),
+        ('JPEG','JPEG'),
+        ('TIF','TIF'),
+        ('PNG','PNG'),
+       
+    )
+
+    Input_documents = MultiSelectField(choices=Input_documents_choices,null=True)
     pre_processing = models.CharField(max_length=50, choices=pre_processing_choices,null=True)
     pipeline = models.CharField(max_length=50, choices=pipeline_choices,null=True)
     classification_model = models.CharField(max_length=50, choices=classification_model_choices,null=True)
@@ -78,7 +90,6 @@ class Cnn_model(models.Model):
     kernel_Initializer_choices = (
         ('he_noraml','he_noraml'),
         ('he_uniform','he_uniform'),
-        ('64','64'),
         
     )
     optimize_choices = (
