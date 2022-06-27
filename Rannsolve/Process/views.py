@@ -12,7 +12,13 @@ def process(request):
 
 def cnnmodel(request):
     form=Cnn_modelForm()
-    return render(request,'process/cnnmodel.html',{'form':form})
+
+    cnn_data = Cnn_model.objects.all()
+    data={
+        'cnn_data':cnn_data,
+        'form':form
+    }
+    return render(request,'process/cnnmodel.html',data)
 
 def add_process(request):
     form=Process_dataForm()
@@ -36,14 +42,21 @@ def add_process(request):
 def add_cnn_model(request):
     form=Cnn_modelForm()
     print(request.FILES['sample_file'])
+    cnn_data = Cnn_model.objects.all()
+    
     if request.method == "POST" and request.FILES['sample_file']:
+
         form = Cnn_modelForm(request.POST)
+        data={
+        'cnn_data':cnn_data,
+        'form':form
+    }
         # breakpoint()
         if form.is_valid():
             
             my_model = form.save(commit=False)
             my_model.sample_file = request.FILES['sample_file']
-            my_model.cnnclass = "Single_Class value"
+            my_model.cnnclass = "Single Class"
             my_model.save()
             # breakpoint()
             # form.save()
@@ -60,4 +73,5 @@ def add_cnn_model(request):
         # data.optimize = request.POST.get('optimize')
         # data.save()
         
-        return render(request,'process/cnnmodel.html',{'form':form})
+        return render(request,'process/cnnmodel.html',data)
+

@@ -223,7 +223,7 @@
             </div>
             <div class="col">
               <div class="d-grid gap-2 d-md-block">
-                <button class="btn text-light rounded-0 bg-nav" type="submit"">+Add</button>
+                <button class="btn text-light rounded-0 bg-nav" type="submit">+Add</button>
                 <button class="btn text-light rounded-0 bg-nav" type="button">Cancel</button>
               </div>
             </div>
@@ -231,13 +231,47 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-2">
 
               <form>
 
             </div>
-            <div class="col">
-              Data Table
+            <div class="col py-3 table-responsive">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Cofidence Threshold</th>
+                    <th scope="col">Sample File</th>
+                    <th scope="col">Epochs</th>
+                    <th scope="col">Batch Size</th>
+                    <th scope="col">kernel Initializer</th>
+                    <th scope="col">Optimize</th>
+                    <th scope="col">Test Size</th>
+                    <th scope="col">Activation</th>
+                    <th scope="col">Class's</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for n in cnn_data%}
+                  <tr>
+                    <th>{{n.type}}</th>
+                    <th>{{n.name}}</th>
+                    <th>{{n.cofidence_number}}</th>
+                    <th>{{n.sample_file}}</th>
+                    <th>{{n.epochs}}</th>
+                    <th>{{n.Batch}}</th>
+                    <th>{{n.kernel_Initializer}}</th>
+                    <th>{{n.optimize}}</th>
+                    <th>{{n.test_size}}</th>
+                    <th>{{n.activation}}</th>
+                    <th>{{n.cnnclass}}</th>
+                    <th>{{n.}}</th>
+                  </tr>
+                  {% endfor%}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
