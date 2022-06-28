@@ -52,7 +52,7 @@
           </div>
           <div class="col">
             <div class="row g-5  align-items-center pt-2">
-              <div class="col-4">
+              <div class="col-3">
                 <label for="inputname" class="col-form-label">Process Name<span class="star">*</span></label>
               </div>
               <div class="col-4 ">
@@ -97,7 +97,6 @@
               </div>
               <div class="col">
                 {{form.Input_documents}}
-
               </div>
             </div>
           </div>
@@ -151,7 +150,7 @@
               </div>
             </div>
 
-            <form>
+         
 
           </div>
         </div>
@@ -168,12 +167,8 @@
                   <label for="" class="col-form-label">User ID<span class="star">*</span></label>
                 </div>
                 <div class="col">
-                  <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                    <option selected>Activ</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                  <input type="text" id="" class="form-control rounded-0"
+                    aria-describedby="" name="user_id">
                 </div>
 
               </div>
@@ -184,7 +179,7 @@
                 </div>
                 <div class="col">
                   <input type="password" id="" class="form-control rounded-0"
-                    aria-describedby="">
+                    aria-describedby="" name="password">
                 </div>
               </div>
               <div class="row g-5  align-items-center pt-2">
@@ -193,7 +188,7 @@
                 </div>
                 <div class="col">
                   <input type="text" id="" class="form-control rounded-0"
-                    aria-describedby="">
+                    aria-describedby="" name="first_name">
                 </div>
               </div>
               <div class="row g-5  align-items-center pt-2">
@@ -202,7 +197,7 @@
                 </div>
                 <div class="col">
                   <input type="email" id="" class="form-control rounded-0"
-                    aria-describedby="">
+                    aria-describedby="" name="email">
                 </div>
               </div>
 
@@ -214,7 +209,7 @@
                 </div>
                 <div class="col">
                   <input type="text" id="" class="form-control rounded-0"
-                    aria-describedby="">
+                    aria-describedby="" name="last_name">
                 </div>
               </div>
               <div class="row g-5 align-items-center pt-2">
@@ -222,11 +217,8 @@
                   <label for="" class="col-form-label">User type<span class="star">*</span></label>
                 </div>
                 <div class="col">
-                  <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example">
-                    <option selected>Activ</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                  <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="user_type">
+                    <option selected>client</option>
                   </select>
                 </div>
 
@@ -238,7 +230,7 @@
                 </div>
                 <div class="col">
                   <input type="text" id="" class="form-control rounded-0"
-                    aria-describedby="">
+                    aria-describedby="" name="confirm_text">
                 </div>
               </div>
 
@@ -246,6 +238,7 @@
           </div>
         </div>
       </div>
+      <form>
     </div>
   </div>
 

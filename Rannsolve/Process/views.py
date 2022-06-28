@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Process_data,Cnn_model
 from Process.forms import Process_dataForm,Cnn_modelForm
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -27,14 +28,13 @@ def add_process(request):
         if form.is_valid():
             form.save()
 
-    # data = Cnn_model()
-    # data.pipeline = request.POST.get('pipeline')
-    # data.classification_model = request.POST.get('classification_model')
-    # data.time_zone = request.POST.get('time_zone')
-    # data.process_sla = request.POST.get('process_sla')
-    # data.pre_processing = request.POST.get('pre_processing')
-    # data.process_name = request.POST.get('process_name')
-    # data.save()
+        data = User()
+        data.username = request.POST.get('user_id')
+        data.password = request.POST.get('password')
+        data.first_name = request.POST.get('first_name')
+        data.email = request.POST.get('email')
+        data.last_name = request.POST.get('last_name')
+        data.save()
 
         return render(request,'process/process.html',{'form':form})
 
