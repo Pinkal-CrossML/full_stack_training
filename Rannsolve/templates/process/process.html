@@ -85,8 +85,9 @@
               <div class="col-4">
                 <label for="" class="col-form-label">Input Documents<span class="star">*</span></label>
               </div>
-              <div class="col">
-                {{form.Input_documents}}
+              <div class="col-6">
+                {% render_field form.Input_documents class=" d-flex justify-content-center px-5 mx-3 list-unstyled  flex-row text" id='' aria-label="" name="classification_model" %}
+                {% comment %} {{form.Input_documents}} {% endcomment %}
               </div>
             </div>
           </div>
