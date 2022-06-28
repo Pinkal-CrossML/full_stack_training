@@ -1,5 +1,6 @@
 {% extends "base/base.html" %}
 {% load static %}
+{% load widget_tweaks %}
 {% block maincontent %}
 <!-- main content -->
 
@@ -86,7 +87,8 @@
                 <label for="inputtexttype" class="col-form-label">Type<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.type }}
+                {% render_field form.type class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.type }} {% endcomment %}
                 {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="type">
                   <option selected value="Regular_Model">Regular Model</option>
                   <option value="VCG_Model">VCG Model</option>
@@ -95,12 +97,13 @@
 
             </div>
             <div class="row g-5  align-items-center pt-2">
-              <div class="col">
+              <div class="col-4">
                 <label for="inputtextname" class="col-form-label">Name<span class="star">*
                 </span></label>
               </div>
               <div class="col">
-                {{ form.name }}
+                {% render_field form.name class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.name }} {% endcomment %}
                 {% comment %} <input type="text" id="inputname" class="form-control rounded-0"
                   aria-describedby="textHelpInline" name='name'> {% endcomment %}
                   <div id="name" class="form-text">Enter a valid model name and space are not allowed.</div>
@@ -108,12 +111,13 @@
         
             </div>
             <div class="row g-5  align-items-center pt-2">
-              <div class="col">
+              <div class="col-4">
                 <label for="inputtext4" class="col-form-label">Cofidence Threshold<span
                     class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.cofidence_number }}
+                {% render_field form.cofidence_number class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.cofidence_number }} {% endcomment %}
                 {% comment %} <input type="number" id="inputtext5" class="form-control rounded-0"
                   aria-describedby="textHelpInline" name='cofidence_number'> {% endcomment %}
                   <div id="confidence" class="form-text">Enter a number between 0 and 100</div>
@@ -136,7 +140,8 @@
                 <label for="inputtext7" class="col-form-label">Epochs<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.epochs }}
+                {% render_field form.epochs class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.epochs }} {% endcomment %}
                 {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='epochs'>
                   <option selected value="20">20</option>
                   <option value="30">30</option>
@@ -156,7 +161,8 @@
                 <label for="inputtext8" class="col-form-label">Batch Size<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.Batch }}
+                {% render_field form.Batch class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.Batch }} {% endcomment %}
                 {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='Batch'>
                   <option selected="" value="16">16</option>
                   <option value="32">32</option>
@@ -169,7 +175,8 @@
                 <label for="inputtext9" class="col-form-label">kernel Initializer<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.kernel_Initializer }}
+                {% render_field form.kernel_Initializer class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.kernel_Initializer }} {% endcomment %}
                 {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="kernel_Initializer">
                   <option selected="" value="he_noraml">he_noraml</option>
                   <option value="he_uniform">he_uniform</option>
@@ -181,7 +188,8 @@
                 <label for="inputtext10" class="col-form-label">Optimize<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.optimize }}
+                {% render_field form.optimize class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.optimize }} {% endcomment %}
                 {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='optimize'>
                   <option selected="" value="rmsprop">rmsprop</option>
                   <option value="xrmprop">xrmprop</option>
@@ -193,7 +201,8 @@
                 <label for="inputtext11" class="col-form-label">Test Size<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.test_size }}
+                {% render_field form.test_size class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+              
                 {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='test_size'>
                   <option selected="05">05</option>
                   <option value="06">06</option>
@@ -208,7 +217,8 @@
                 <label for="inputtext12" class="col-form-label">Activation<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.activation }}
+                {% render_field form.activation class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                {% comment %} {{ form.activation }} {% endcomment %}
                 {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name='activation'>
                   <option selected="relu">relu</option>
                   <option value="esl">esl</option>
@@ -233,12 +243,12 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-2">
+            <div class="col">
 
               <form>
 
             </div>
-            <div class="col py-3 table-responsive">
+            <div class="col-12 py-3 table-responsive">
               <table class="table table-striped table-bordered" id="myTable">
                 <thead>
                   <tr>
@@ -269,7 +279,6 @@
                     <th>{{n.test_size}}</th>
                     <th>{{n.activation}}</th>
                     <th>{{n.cnnclass}}</th>
-                    <th>{{n.}}</th>
                   </tr>
                   {% endfor%}
                 </tbody>

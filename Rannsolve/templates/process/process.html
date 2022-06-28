@@ -1,4 +1,5 @@
 {% extends "base/base.html" %}
+{% load widget_tweaks %}
 {% load static %}
 {% block maincontent %}
 <!-- main content -->
@@ -52,14 +53,12 @@
           </div>
           <div class="col">
             <div class="row g-5  align-items-center pt-2">
-              <div class="col-3">
+              <div class="col-4">
                 <label for="inputname" class="col-form-label">Process Name<span class="star">*</span></label>
               </div>
-              <div class="col-4 ">
-              
-                {{ form.process_name }} 
-                {% comment %} <input type="text" id="inputname" class="form-control rounded-0"
-                  aria-describedby="" name="process_name"> {% endcomment %}
+              <div class="col ">
+                {% render_field form.process_name class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+               
               </div>
             </div>
             <div class="row g-5 align-items-center pt-2">
@@ -67,13 +66,8 @@
                 <label for="" class="col-form-label">Pipeline<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.pipeline }}
-                {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="pipeline">
-                  <option selected value="Engine-1">Engine-1</option >
-                  <option value="Engine-2">Engine-2</option>
-                  <option value="Engine-3">Engine-3</option>
-                  <option value="Engine-4">Engine-4</option>
-                </select> {% endcomment %}
+                {% render_field form.pipeline class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+               
               </div>
 
             </div>
@@ -83,12 +77,8 @@
                     class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.classification_model }}
-                {% comment %} <select class="form-select rounded-0" aria-label="Default select example"
-                  onchange="displayDivDemo('hideValuesOnSelect', this)" name="classification_model">
-                  <option value="Yes" selected >Yes</option>
-                  <option value="No">No</option>
-                </select> {% endcomment %}
+                {% render_field form.classification_model class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+               
               </div>
             </div>
             <div class="row g-5 align-items-center pt-2">
@@ -108,12 +98,8 @@
                 <label for="" class="col-form-label">Time Zone<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.time_zone }}
-                {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="time_zone">
-                  <option selected value="usa">USA</option>
-                  <option value="in">IN</option>
-                  <option value="uk">UK</option>
-                </select> {% endcomment %}
+                {% render_field form.time_zone class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+                
               </div>
 
             </div>
@@ -122,19 +108,8 @@
                 <label for="" class="col-form-label">Process SLA<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.process_sla }}
-                {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="process_sla">
-                  <option selected="" value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select> {% endcomment %}
+                {% render_field form.process_sla class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+               
               </div>
             </div>
             <div class="row g-3 align-items-center pt-2">
@@ -142,11 +117,8 @@
                 <label for="" class="col-form-label">Pre Processing<span class="star">*</span></label>
               </div>
               <div class="col">
-                {{ form.pre_processing }}
-                {% comment %} <select class="form-select rounded-0 mb-2 text-muted" aria-label="Default select example" name="pre_processing">
-                  <option selected value="yes">yes</option>
-                  <option value="no">no</option>
-                </select> {% endcomment %}
+                {% render_field form.pre_processing class="form-control rounded-0" id='exampleFormControlSelect1' aria-label="" name="classification_model" %}
+               
               </div>
             </div>
 
