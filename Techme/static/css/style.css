@@ -1,14 +1,12 @@
 body{
-    background: #edeff2;
+    background:black;
+    font-family: 'Raleway', sans-serif;
 }
 
 .bg-nav{
     background: #42778F;
     
 }
-.star{
-    color: red;
-}
-#hideValuesOnSelect {
-    display: none;
+.bgdark{
+    background-color: black;
 }
