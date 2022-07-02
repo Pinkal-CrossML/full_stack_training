@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'User_app',
     'Site',
+<<<<<<< HEAD
     'Account',
+=======
+>>>>>>> 9f5e5efaf5b1897da2d6076c44fa44013844b621
 ]
 
 MIDDLEWARE = [
