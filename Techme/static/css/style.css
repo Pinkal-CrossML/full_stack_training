@@ -1,10 +1,7 @@
 body{
     background:black;
     font-family: 'Raleway', sans-serif;
-<<<<<<< HEAD
     color: white
-=======
->>>>>>> 9f5e5efaf5b1897da2d6076c44fa44013844b621
 }
 
 .bg-nav{
@@ -13,7 +10,6 @@ body{
 }
 .bgdark{
     background-color: black;
-<<<<<<< HEAD
 }
 
 
@@ -67,6 +63,3 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
     height: 8%;
 
 } */
-=======
-}
->>>>>>> 9f5e5efaf5b1897da2d6076c44fa44013844b621
