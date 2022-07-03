@@ -11,6 +11,9 @@ body{
 .bgdark{
     background-color: black;
 }
+.textdark{
+   color: black;
+}
 
 
 CSS
@@ -63,3 +66,4 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
     height: 8%;
 
 } */
+
