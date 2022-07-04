@@ -8,6 +8,8 @@ urlpatterns = [
     path('store',views.store,name='store'),
     path('cart',views.cart,name='cart'),
     path('product',views.product,name='product'),
+    path('news',views.news,name='news'),
+    path('services',views.services,name='services'),
     # path('cnnmodel',views.cnnmodel,name='cnnmodel'), #url for form page 
     
    

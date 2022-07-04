@@ -21,3 +21,9 @@ def cart(request):
 
 def product(request):
     return render(request,'Site/product.html')
+
+def news(request):
+    return render(request,'Site/news.html')
+
+def services(request):
+    return render(request,'Site/services.html')
