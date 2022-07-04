@@ -18,24 +18,14 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls import static
 
-<<<<<<< HEAD
 # from django.views.static import serve
 # from django.conf.urls import url
-=======
-from django.views.static import serve
-from django.conf.urls import url
->>>>>>> 9aa0749d6844365e1818bc248e88dbc11bd41642
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Site.urls')),
     path('',include('Account.urls')),
-<<<<<<< HEAD
     # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
     # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
-=======
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
->>>>>>> 9aa0749d6844365e1818bc248e88dbc11bd41642
 ]
