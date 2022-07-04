@@ -15,3 +15,9 @@ def about(request):
 
 def store(request):
     return render(request,'Site/store.html')
+
+def cart(request):
+    return render(request,'Site/cart.html')
+
+def product(request):
+    return render(request,'Site/product.html')

@@ -6,6 +6,8 @@ urlpatterns = [
     path('',views.home,name='home'),
     path('about',views.about,name='about'),
     path('store',views.store,name='store'),
+    path('cart',views.cart,name='cart'),
+    path('product',views.product,name='product'),
     # path('cnnmodel',views.cnnmodel,name='cnnmodel'), #url for form page 
     
    
