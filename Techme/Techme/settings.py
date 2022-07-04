@@ -24,10 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h=0t*yha6mybax%p9$qkqyimu%^8u*ad%ikimnf9&f-v*x3owz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
+<<<<<<< HEAD
 # ALLOWED_HOSTS = ['127.0.0.1','techmeget.herokuapp.com']
 ALLOWED_HOSTS = []
+=======
+ALLOWED_HOSTS = ['127.0.0.1','techmeget.herokuapp.com']
+>>>>>>> 9aa0749d6844365e1818bc248e88dbc11bd41642
 
 
 # Application definition
@@ -47,7 +51,11 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+<<<<<<< HEAD
     # 'whitenoise.middleware.WhiteNoiseMiddleware',
+=======
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+>>>>>>> 9aa0749d6844365e1818bc248e88dbc11bd41642
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
