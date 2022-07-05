@@ -10,6 +10,7 @@ urlpatterns = [
     path('product',views.product,name='product'),
     path('news',views.news,name='news'),
     path('services',views.services,name='services'),
+    path('contact',views.contact,name='contact'),
     # path('cnnmodel',views.cnnmodel,name='cnnmodel'), #url for form page 
     
    

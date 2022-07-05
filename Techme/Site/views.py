@@ -27,3 +27,6 @@ def news(request):
 
 def services(request):
     return render(request,'Site/services.html')
+
+def contact(request):
+    return render(request,'Site/contact.html')

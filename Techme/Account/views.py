@@ -13,5 +13,3 @@ def register(request):
 def login(request):
     return render(request,'Account/login.html')
 
-def contact(request):
-    return render(request,'Account/contact.html')
