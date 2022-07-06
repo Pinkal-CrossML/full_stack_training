@@ -20,12 +20,13 @@ from django.conf.urls import static
 
 # from django.views.static import serve
 # from django.conf.urls import url
-
+from rest_framework.authtoken import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Site.urls')),
     path('',include('Account.urls')),
+    path('api-token-auth/', views.obtain_auth_token)
     # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
     # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]

@@ -1,65 +1,129 @@
-{% extends "base/base.html" %}
-{% load static %}
-{% block maincontent %}
+{% extends "base/base.html" %} {% load static %} {% block maincontent %}
 <!-- main content -->
 <!--Main layout-->
 
-<div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center">
-    <div class="hd">Why People Believe in Us</div>
-    <p><small class="text-light">Always render more and better service than <br />is expected of you, no matter what your ask may be.</small></p>
-    <div class="row" style="justify-content: center">
-        <div class="card col-md-3 col-12 m-4">
-            <div class="card-content">
-                <div class="card-body"> <img class="img" src="https://i.imgur.com/S7FJza5.png" />
-                    <div class="shadow"></div>
-                    <div class="card-title"> We're Free </div>
-                    <div class="card-subtitle">
-                        <p> <small class="text-muted">We spent thousands of hours creating on algorithm that does this for you in seconds. We collect a small fee from the professional after they meet your</small> </p>
-                    </div>
-                </div>
-            </div>
+<div
+  class="container-fluid mx-auto mt-5 mb-5 col-12"
+  style="text-align: center"
+>
+  <div class="hd">Why People Believe in Us</div>
+  <p>
+    <small class="text-light"
+      >Always render more and better service than <br />is expected of you, no
+      matter what your ask may be.</small
+    >
+  </p>
+  <div class="row" style="justify-content: center">
+    <div class="card col-md-3 col-12 m-4">
+      <div class="card-content">
+        <div class="card-body">
+          <img class="img" src="https://i.imgur.com/S7FJza5.png" />
+          <div class="shadow"></div>
+          <div class="card-title">We're Free</div>
+          <div class="card-subtitle">
+            <p>
+              <small class="text-muted"
+                >We spent thousands of hours creating on algorithm that does
+                this for you in seconds. We collect a small fee from the
+                professional after they meet your</small
+              >
+            </p>
+          </div>
         </div>
-        <div class="card col-md-3 col-12 m-4 ">
-            <div class="card-content">
-                <div class="card-body"> <img class="img" src="https://i.imgur.com/xUWJuHB.png" />
-                    <div class="card-title"> We're Unbiased </div>
-                    <div class="card-subtitle">
-                        <p> <small class="text-muted"> We don't accept ads from anyone. We use actual data to match you who the best person for each job </small> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card col-md-3 col-12 m-4">
-            <div class="card-content">
-                <div class="card-body"> <img class="img rck" src="https://i.imgur.com/rG3CGn3.png" />
-                    <div class="card-title"> We Guide you </div>
-                    <div class="card-subtitle">
-                        <p> <small class="text-muted">Buying or selling a home is often the largest transaction anyone does in their life. we guide you through the process so that you can be confident in reaching your dream outcome.</small> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <div class=''>
-        <button class="btn bgdark border-light text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="card col-md-3 col-12 m-4">
+      <div class="card-content">
+        <div class="card-body">
+          <img class="img" src="https://i.imgur.com/xUWJuHB.png" />
+          <div class="card-title">We're Unbiased</div>
+          <div class="card-subtitle">
+            <p>
+              <small class="text-muted">
+                We don't accept ads from anyone. We use actual data to match you
+                who the best person for each job
+              </small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card col-md-3 col-12 m-4">
+      <div class="card-content">
+        <div class="card-body">
+          <img class="img rck" src="https://i.imgur.com/rG3CGn3.png" />
+          <div class="card-title">We Guide you</div>
+          <div class="card-subtitle">
+            <p>
+              <small class="text-muted"
+                >Buying or selling a home is often the largest transaction
+                anyone does in their life. we guide you through the process so
+                that you can be confident in reaching your dream outcome.</small
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="offcanvas-body small text-dark">
-    ...
+  <div class="">
+    <button
+      class="btn bgdark border-light text-light"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasBottom"
+      aria-controls="offcanvasBottom"
+    >
+      Our Upcoming Service
+    </button>
+
+    <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body small text-dark">
+        <div class="wrapper bgdark">
+          <p class="title">Play with background-clip text</p>
+          <div class="clip-text clip-text_one">JINTOS</div>
+          <div class="clip-text clip-text_fifteen clip-text--no-textzone">
+            JINTOS
+          </div>
+          <div class="clip-text clip-text_twelve clip-text--cover">JINTOS</div>
+          <div class="clip-text clip-text_tree clip-text--no-textzone">
+            JINTOS
+          </div>
+          <div class="clip-text clip-text_two">JINTOS</div>
+          <div class="clip-text clip-text_fourteen clip-text--cover">
+            JINTOS
+          </div>
+          <div class="clip-text clip-text_tree">JINTOS</div>
+          <div class="clip-text clip-text_eleven clip-text--cover">JINTOS</div>
+          <div class="clip-text clip-text_four">JINTOS</div>
+          <div class="clip-text clip-text_five">JINTOS</div>
+          <div class="clip-text clip-text_six">JINTOS</div>
+          <div class="clip-text clip-text_seven">JINTOS</div>
+          <div class="clip-text clip-text_eight">JINTOS</div>
+
+          <div class="clip-text clip-text_nine">JINTOS</div>
+          <div class="clip-text clip-text_ten">JINTOS</div>
+          <div class="clip-text clip-text_thirteen clip-text--cover">
+            JINTOS
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-        
-    </div>
-</div>
-
-
-
-
-
 
 <!-- main content end-->
 {% endblock %}
