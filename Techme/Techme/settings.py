@@ -43,7 +43,12 @@ INSTALLED_APPS = [
     'User_app',
     'Site',
     'Account',
+<<<<<<< HEAD
     'product'
+=======
+    'rest_framework',
+    'rest_framework.authtoken'
+>>>>>>> cc0295fab4ee0de129e1a575ef9002cd179f5495
 
 ]
 
