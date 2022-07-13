@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'User_app',
     'Site',
     'Account',
+    'product'
 
 ]
 
