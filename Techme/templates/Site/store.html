@@ -4,7 +4,8 @@
   referrerpolicy="no-referrer"
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
   integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-  crossorigin="anonymous" ></script>
+  crossorigin="anonymous"
+></script>
 <style>
   .card-img-top {
     height: 400px;
@@ -19,14 +20,12 @@
         type: "GET",
         url: "http://127.0.0.1:8000/product/product1/",
         success: function (response) {
-          obj = console.log(response.category);
-          // console.log(obj, 'response');
           var dynamic = document.querySelector(".card_1");
           for (let i = 0; i < response.category.length; i++) {
             var fetch = document.querySelector(".card_1").innerHTML;
             dynamic.innerHTML =
               `
-                            <div class="card col-3 m-5" style="width: 18rem;">
+                            <div class="card col-3 m-5" >
                             <img src="` +
               response.category[i].image +
               `" class="card-img-top" alt="...">
@@ -37,7 +36,11 @@
                               <p class="card-text">` +
               response.category[i].description +
               `</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+              
+                              <p class="card-text">` +
+              response.category[i].category +
+              `</p>
+                              <a href="/product3" class="btn btn-primary">Go somewhere</a>
                             </div>
                            
                           </div>` +
@@ -58,145 +61,10 @@
 </div>
 
 <div class="container pt-4">
-  <div class="row row-cols-1 row-cols-md-4 g-4">
-    {% comment %}
-    <div class="col">
-      <div class="card h-100">
-        <div class="card_image">
-          <img
-            src="../.././static/media/images/pro1.jpeg"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="position-absolute w-100 card-logo"></div>
-        <div class="card-body pt-5 text-muted">
-          <div class="">
-            <i class="bi bi-cart-fill"></i> Delivery Free : Free
-          </div>
-          <div class=""><i class="bi bi-alarm"></i> Delivery Time : 4 Days</div>
-          <div class="">
-            <div class="star main-color">
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <span class=""> 4.5</span>
-              <a href="/product" class="float-end text-dark"
-                ><button type="button" class="btn btn-outline-dark">
-                  View
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="row">
+    <div class="bg-light card_1 row h-100 ">
+
     </div>
-    {% endcomment %}
-    <div class="col">
-      <div class="card card_1 h-100">
-        {% comment %}
-        <div class="card_image">
-          <img
-            src="../.././static/media/images/pro2.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="position-absolute w-100 card-logo"></div>
-        <div class="card-body pt-5 text-muted">
-          <div class="">
-            <i class="bi bi-cart-fill"></i> Delivery Free : Free
-          </div>
-          <div class=""><i class="bi bi-alarm"></i> Delivery Time : 4 Days</div>
-          <div class="">
-            <div class="star main-color">
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <span class=""> 4.5</span>
-              <a href="/product" class="float-end text-dark"
-                ><button type="button" class="btn btn-outline-dark">
-                  View
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-        {% endcomment %}
-      </div>
-    </div>
-    {% comment %}
-    <div class="col">
-      <div class="card h-100">
-        <div class="card_image">
-          <img
-            src="../.././static/media/images/pro3.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="position-absolute w-100 card-logo"></div>
-        <div class="card-body pt-5 text-muted">
-          <div class="">
-            <i class="bi bi-cart-fill"></i> Delivery Free : Free
-          </div>
-          <div class=""><i class="bi bi-alarm"></i> Delivery Time : 4 Days</div>
-          <div class="">
-            <div class="star main-color">
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <span class=""> 4.5</span>
-              <a href="/product" class="float-end text-dark"
-                ><button type="button" class="btn btn-outline-dark">
-                  View
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <div class="card_image">
-          <img
-            src="../.././static/media/images/pro4.jpeg"
-            class="card-img-top"
-            alt="..."
-          />
-        </div>
-        <div class="position-absolute w-100 card-logo"></div>
-        <div class="card-body text-muted">
-          <div class="">
-            <i class="bi bi-cart-fill"></i> Delivery Free : Free
-          </div>
-          <div class=""><i class="bi bi-alarm"></i> Delivery Time : 4 Days</div>
-          <div class="">
-            <div class="star main-color">
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <i class=""><i class="bi bi-star-fill"></i></i>
-              <span class=""> 4.5</span>
-              <a href="/product" class="float-end text-dark"
-                ><button type="button" class="btn btn-outline-dark">
-                  View
-                </button></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endcomment %}
   </div>
 </div>
 

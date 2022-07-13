@@ -20,24 +20,18 @@ from django.conf.urls import static
 
 # from django.views.static import serve
 # from django.conf.urls import url
-<<<<<<< HEAD
 
 from django.conf import settings
 from django.conf.urls.static import static
-=======
 from rest_framework.authtoken import views
 
->>>>>>> cc0295fab4ee0de129e1a575ef9002cd179f5495
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Site.urls')),
     path('',include('Account.urls')),
-<<<<<<< HEAD
     path('product',include('product.urls')),
 
-=======
     path('api-token-auth/', views.obtain_auth_token)
->>>>>>> cc0295fab4ee0de129e1a575ef9002cd179f5495
     # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
     # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
