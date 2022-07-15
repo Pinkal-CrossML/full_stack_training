@@ -8,9 +8,10 @@
 ></script>
 <style>
   .card-img-top {
-    height: 400px;
+    height: 290px;
   }
 </style>
+
 <script>
   $(document).ready(function () {
     $("document").ready(function () {
@@ -35,14 +36,19 @@
               ` </h5>
                               <p class="card-text">` +
               response.category[i].description +
+
               `</p>
-              
+                              <p class="card-text"> $` +
+              response.category[i].price +
+
+              `</p>
+
                               <p class="card-text">` +
-              response.category[i].category +
+              {% comment %} response.category[i].category + {% endcomment %}
               `</p>
-                              <a href="/product3" class="btn btn-primary">Go somewhere</a>
+                              <a href="/cart" class="btn btn-outline-dark">Add to Cart</a>
                             </div>
-                           
+
                           </div>` +
               fetch;
           }
@@ -62,9 +68,7 @@
 
 <div class="container pt-4">
   <div class="row">
-    <div class="bg-light card_1 row h-100 ">
-
-    </div>
+    <div class="bg-light card_1 row h-100"></div>
   </div>
 </div>
 
