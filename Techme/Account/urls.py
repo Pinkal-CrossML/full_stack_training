@@ -4,7 +4,8 @@ from . import views
 
 urlpatterns = [
     path('register',views.register,name='register'),
-    path('login',views.login,name='login'),
+    path('login',views.logins,name='login'),
+    path('logout',views.logouts,name='logout'),
     # path('cnnmodel',views.cnnmodel,name='cnnmodel'), #url for form page 
     
    
