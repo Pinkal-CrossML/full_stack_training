@@ -19,7 +19,7 @@
       console.log(form);
       $.ajax({
         type: "GET",
-        url: "http://127.0.0.1:8000/product/product1/",
+        url: "/product/product1/",
         success: function (response) {
           var dynamic = document.querySelector(".card_1");
           for (let i = 0; i < response.category.length; i++) {
